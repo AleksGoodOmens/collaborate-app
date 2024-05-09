@@ -40,10 +40,10 @@ function CommentsSection() {
 				<div className="flex place-content-end">
 					<SectionTitle className=" bg-secondary-200 text-black">Opinions about our partners</SectionTitle>
 				</div>
-				<div className="flex justify-between -mx-12 flex-wrap">
+				<div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  justify-between gap-10">
 					{comments.map((comment) => (
 						<CommentCard
-							className="basis-1/4 p-12"
+							className="basis-1/4 "
 							key={comment.commentId}
 							comment={comment}
 						/>

@@ -1,5 +1,5 @@
 function NavListFooter({ children }) {
-	return <ul className="flex-auto max-w-fit text-xs grid gap-4 text-black">{children}</ul>;
+	return <ul className="text-xs grid gap-4 text-black text-center">{children}</ul>;
 }
 
 export default NavListFooter;

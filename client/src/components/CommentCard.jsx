@@ -5,9 +5,9 @@ function CommentCard({ comment, className }) {
 	return (
 		<article className={`${className} `}>
 			<div className="p-4 bg-accent-900 rounded-3xl flex flex-col h-full gap-4">
-				<header className="flex gap-5 justify-between items-center mb-4">
+				<header className="flex justify-between items-center mb-4">
 					<StarRating starsValue={starsValue} />
-					<div className="rounded-full w-20 h-20 overflow-hidden">
+					<div className="rounded-full w-20 h-20 overflow-hidden flex-shrink-0">
 						<img
 							src={pic}
 							alt={name}

@@ -8,7 +8,7 @@ function PartnerCard({ partner, className }) {
 				to={`partner/:partnerId`}
 				className=" grid grid-cols-2 relative grid-rows-2  aspect-square gap-10"
 			>
-				<h3 className=" shadow-full absolute rounded-3xl place-self-center w-3/5 h-3/5 place-content-center p-4 bg-secondary-200 font-montaga text-black text-3xl">
+				<h3 className=" shadow-full absolute rounded-3xl place-self-center w-3/5 h-3/5 place-content-center p-4 bg-secondary-200 font-montaga text-black text-xl lg:text-3xl">
 					<div className="text-center">{partnerTitle}</div>
 				</h3>
 				{pictures.map((pic, id) => (

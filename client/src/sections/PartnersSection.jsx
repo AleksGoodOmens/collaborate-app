@@ -25,10 +25,10 @@ function PartnersSection() {
 		<div className="bg-[url(./partnersSection/bg.png)] bg-cover bg-center py-24 px-4">
 			<section className=" container mx-auto max-w-screen-xl flex  flex-col gap-16 ">
 				<SectionTitle>Our partners</SectionTitle>
-				<div className="flex flex-wrap -mx-12 justify-between mb-11">
-					{cards.map((card) => (
+				<div className="grid sm:grid-cols-4 md:grid-cols-6 justify-center gap-12 mb-11 ">
+					{cards.map((card, i) => (
 						<PartnerCard
-							className="basis-1/3 px-12"
+							className={`${cards.length % 2 === 1 && cards.length === i + 1 ? 'sm:col-start-2 sm:col-end-4 md:col-span-2' : 'sm:col-span-2'} `}
 							key={card.partnerId}
 							partner={card}
 						/>
